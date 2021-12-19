@@ -1,0 +1,80 @@
+number function arith(number num){
+	create number q = 5;
+	create number w = 5;
+	create number e = 2;
+	create number r = 2;
+	create number t = 6;
+	show '---';
+	show num;
+	show '+';
+	show q;
+	num = num +q;
+	show '=';
+	show num;
+	show '---';
+	show num;
+	show '-';
+	show w;
+	num = num -w;
+	show '=';
+	show num;
+	show '---';
+	show num;
+	show '*';
+	show e;
+	num = num * e;
+	show '=';
+	show num;
+	show '---';
+	show num;
+	show '/';
+	show r;
+	num = num /r;
+	show '=';
+	show num;
+	show '---';
+	show num;
+	show '%';
+	show t;
+	num = num % t;
+	show '=';
+	show num;
+	return num;
+};
+
+create string function strcon(string str, string strq);
+
+string function fi(string s){
+	create string function strcopy(string a, string hs);
+	create number function strln(string f);
+	create string uy = 'two';
+	show s;
+	show 'concat';
+	s = strcon(s, uy);
+	show s;
+	show 'copy';
+	s = strcopy(uy, s);
+	show s;
+	show '2-';
+	show uy;
+	show 'length';
+	create number some;
+	some = strln(s);
+	show some;
+	return s;
+};
+
+main{
+	create string sr = 'one';
+	create number num = 0;
+	create number uj = 0;
+	show num;
+	show sr;
+	sr = fi(sr);
+	num = arith(num);
+	do [
+		show num;
+	] while(5);
+	show uj;
+	return 0;
+};

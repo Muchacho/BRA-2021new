@@ -1,0 +1,216 @@
+------ Протокол ------
+Дата: 19.12.2021 16:11:37  
+
+------ Параметры ------
+-in:in.txt
+-out:out.txt
+-log:log.txt
+
+------ Исходные данные ------
+Количество символов: 1117
+Проигнорировано: 28
+Количество строк: 80
+
+------ Таблица идентификаторов ------
+index      name      type        id type     scope      lexTable index
+    0     arith      int         f          global              2
+    1       num      int         p           arith              5
+    2         q      int         v           arith             10
+    3        L0      int         l           arith             12
+    4         w      int         v           arith             16
+    5        L1      int         l           arith             18
+    6         e      int         v           arith             22
+    7        L2      int         l           arith             24
+    8         r      int         v           arith             28
+    9        L3      int         l           arith             30
+   10         t      int         v           arith             34
+   11        L4      int         l           arith             36
+   12        L5      str         l           arith             39
+   13        L6      sym         l           arith             45
+   14        L7      sym         l           arith             57
+   15        L8      sym         l           arith             69
+   16        L9      sym         l           arith             81
+   17       L10      sym         l           arith             93
+   18       L11      sym         l           arith            105
+   19       L12      sym         l           arith            117
+   20       L13      sym         l           arith            129
+   21       L14      sym         l           arith            141
+   22       L15      sym         l           arith            153
+   23    strcon      str         f          global            166
+   24       str      str         p          strcon            169
+   25      strq      str         p          strcon            172
+   26        fi      str         f          global            177
+   27         s      str         p              fi            180
+   28   strcopy      str         f              fi            186
+   29         a      str         p         strcopy            189
+   30        hs      str         p         strcopy            192
+   31     strln      int         f              fi            198
+   32         f      str         p           strln            201
+   33        uy      str         v              fi            206
+   34       L16      str         l              fi            208
+   35       L17      str         l              fi            214
+   36       L18      str         l              fi            229
+   37       L19      str         l              fi            244
+   38       L20      str         l              fi            250
+   39      some      int         v              fi            254
+   40      main      int         f          global            272
+   41        sr      str         v            main            275
+   42       L21      str         l            main            277
+   43       num      int         v            main            281
+   44       L22      int         l            main            283
+   45        uj      int         v            main            287
+   46       L23      int         l            main            289
+   47       L24      int         l            main            319
+   48       L25      int         l            main            326
+
+------ Таблица лексем ------
+tfi<0>(ti<1>){dti<2>=l<3>;
+dti<4>=l<5>;
+dti<6>=l<7>;
+dti<8>=l<9>;
+dti<10>=l<11>;
+pl<12>;
+pi<1>;
+pl<13>;
+pi<2>;
+i<1>=i<1>+i<2>;
+pl<14>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<15>;
+pi<4>;
+i<1>=i<1>-i<4>;
+pl<16>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<17>;
+pi<6>;
+i<1>=i<1>*i<6>;
+pl<18>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<19>;
+pi<8>;
+i<1>=i<1>/i<8>;
+pl<20>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<21>;
+pi<10>;
+i<1>=i<1>%i<10>;
+pl<22>;
+pi<1>;
+ri<1>;
+};
+dtfi<23>(ti<24>,ti<25>);
+tfi<26>(ti<27>){dtfi<28>(ti<29>,ti<30>);
+dtfi<31>(ti<32>);
+dti<33>=l<34>;
+pi<27>;
+pl<35>;
+i<27>=i<23>(i<27>,i<33>);
+pi<27>;
+pl<36>;
+i<27>=i<28>(i<33>,i<27>);
+pi<27>;
+pl<37>;
+pi<33>;
+pl<38>;
+dti<39>;
+i<39>=i<31>(i<27>);
+pi<39>;
+ri<27>;
+};
+m{dti<41>=l<42>;
+dti<43>=l<44>;
+dti<45>=l<46>;
+pi<43>;
+pi<41>;
+i<41>=i<26>(i<41>);
+i<43>=i<0>(i<43>);
+a[pi<43>;
+]z(l<47>);
+pi<45>;
+rl<48>;
+};
+------ Синтаксический анализ выполнен без ошибок ------
+------ Семантический анализ выполнен без ошибок ------
+------ Таблица лексем после польской нотации ------
+tfi<0>(ti<1>){dti<2>=l<3>;
+dti<4>=l<5>;
+dti<6>=l<7>;
+dti<8>=l<9>;
+dti<10>=l<11>;
+pl<12>;
+pi<1>;
+pl<13>;
+pi<2>;
+i<1>=i<1>i<2>+;
+pl<14>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<15>;
+pi<4>;
+i<1>=i<1>i<4>-;
+pl<16>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<17>;
+pi<6>;
+i<1>=i<1>i<6>*;
+pl<18>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<19>;
+pi<8>;
+i<1>=i<1>i<8>/;
+pl<20>;
+pi<1>;
+pl<12>;
+pi<1>;
+pl<21>;
+pi<10>;
+i<1>=i<1>i<10>%;
+pl<22>;
+pi<1>;
+ri<1>;
+};
+dtfi<23>(ti<24>,ti<25>);
+tfi<26>(ti<27>){dtfi<28>(ti<29>,ti<30>);
+dtfi<31>(ti<32>);
+dti<33>=l<34>;
+pi<27>;
+pl<35>;
+i<27>=i<27>i<33>@<23>2;
+pi<27>;
+pl<36>;
+i<27>=i<33>i<27>@<28>2;
+pi<27>;
+pl<37>;
+pi<33>;
+pl<38>;
+dti<39>;
+i<39>=i<27>@<31>1;
+pi<39>;
+ri<27>;
+};
+m{dti<41>=l<42>;
+dti<43>=l<44>;
+dti<45>=l<46>;
+pi<43>;
+pi<41>;
+i<41>=i<41>@<26>1;
+i<43>=i<43>@<0>1;
+a[pi<43>;
+]z(l<47>);
+pi<45>;
+rl<48>;
+};
+------ Генерация кода выполнен без ошибок ------
