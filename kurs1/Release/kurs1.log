@@ -1,0 +1,8 @@
+﻿  main.cpp
+D:\projects\kursyap\55\bra-2021-master\kurs1\In.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода
+  Создание кода завершено
+  1 of 1422 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  kurs1.vcxproj -> D:\projects\kursyap\55\bra-2021-master\Release\kurs1.exe
